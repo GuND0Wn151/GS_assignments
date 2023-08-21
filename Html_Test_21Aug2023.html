@@ -1,0 +1,211 @@
+<html>
+  <head>
+    <title>Test1</title>
+
+    <!-- ------------------Style for First Code--------------------- -->
+    <style>
+      .container {
+        display: flex;
+      }
+      .content {
+        margin: 10px;
+      }
+      .content:hover {
+        zoom: 120%;
+      }
+    </style>
+    <!-- ------------------Style for Second Code--------------------- -->
+    <style>
+      .container2 {
+        width: 60%;
+        border: 2px solid black;
+        padding: 5px;
+      }
+      .data {
+        display: flex;
+        justify-content: space-between;
+        width: 85%;
+        margin: 5px;
+      }
+      .last {
+        justify-content: space-around;
+      }
+    </style>
+
+    <!-- ------------------Link for third Code--------------------- -->
+    <link rel="stylesheet" href="Html_Test_21Aug2023.css" />
+
+    <!-- ------------------External css code if file is missing-------------------- -->
+    <style>
+      td {
+        width: 25%;
+      }
+      tr:hover {
+        border-color: red;
+        border: 10px solid lightgreen;
+        background-color: lightgreen;
+        width: 50%;
+      }
+      table {
+        background-color: lightgray;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- ------------------Image Row Here--------------------- -->
+    <div class="container">
+      <div class="content">
+        <img
+          src="https://images.ctfassets.net/hrltx12pl8hq/3Z1N8LpxtXNQhBD5EnIg8X/975e2497dc598bb64fde390592ae1133/spring-images-min.jpg"
+          alt=""
+        />
+      </div>
+      <div class="content">
+        <img
+          src="https://images.ctfassets.net/hrltx12pl8hq/3Z1N8LpxtXNQhBD5EnIg8X/975e2497dc598bb64fde390592ae1133/spring-images-min.jpg"
+          alt=""
+        />
+      </div>
+      <div class="content">
+        <img
+          src="https://images.ctfassets.net/hrltx12pl8hq/3Z1N8LpxtXNQhBD5EnIg8X/975e2497dc598bb64fde390592ae1133/spring-images-min.jpg"
+          alt=""
+        />
+      </div>
+      <div class="content">
+        <img
+          src="https://images.ctfassets.net/hrltx12pl8hq/3Z1N8LpxtXNQhBD5EnIg8X/975e2497dc598bb64fde390592ae1133/spring-images-min.jpg"
+          alt=""
+        />
+      </div>
+    </div>
+
+    <!-- ---------Registration Form Here----------------------->
+    <!-- ---------Using flex instead of table----------------------->
+    <form class="container2">
+      <h2>Student Data</h2>
+      <div class="data">
+        <div>First Name:</div>
+        <div><input type="text" required /></div>
+      </div>
+      <div class="data">
+        <div>Last Name:</div>
+        <div><input type="text" /></div>
+      </div>
+      <div class="data">
+        <div>Mobile No:</div>
+        <div><input type="number" required /></div>
+      </div>
+      <div class="data">
+        <div>Email No:</div>
+        <div><input type="email" required /></div>
+      </div>
+      <div class="data">
+        <div>Date of birth</div>
+        <div><input type="date" required /></div>
+      </div>
+      <div class="data">
+        <div>Password</div>
+        <div><input type="password" required /></div>
+      </div>
+      <div class="data">
+        <div>Country:</div>
+        <div>
+          <select name="country" id="">
+            <option value="India">India</option>
+            <option value="India">USA</option>
+            <option value="India">UK</option>
+            <option value="India">Netherlands</option>
+            <option value="India">Russia</option>
+            <option value="India">Italy</option>
+            <option value="India">China</option>
+            <option value="India">Japan</option>
+            <option value="India">Spain</option>
+            <option value="India">Mexico</option>
+            <option value="India">Sydney</option>
+          </select>
+        </div>
+      </div>
+      <div class="data">
+        <div>Qualifications</div>
+        <div>
+          <input type="checkbox" name="quali" id="quali" />Mtech
+          <input type="checkbox" name="quali" id="quali" />Btech
+          <input type="checkbox" name="quali" id="quali" />Masters
+        </div>
+      </div>
+
+      <div class="data">
+        <div>Gender:</div>
+        <div>
+          <input type="radio" name="gender" required="" />Male
+          <input type="radio" name="gender" required id="" />Female
+        </div>
+      </div>
+      <div class="data last">
+        <div>
+          <input type="submit" />
+        </div>
+        <div>
+          <input type="reset" />
+        </div>
+      </div>
+    </form>
+
+    <!-- ---------Table Hightlight Here----------------------->
+    <!-- ---------Css File Name is: Html_Test_21Aug2023.css----------------------->
+    <div>
+      <table border="2px solid black">
+        <tr>
+          <th>Name</th>
+          <th>Salary</th>
+          <th>Dept</th>
+          <th>Location</th>
+        </tr>
+        <tr>
+          <td>Raj</td>
+          <td>100000</td>
+          <td>Phyicist</td>
+          <td>USA</td>
+        </tr>
+        <tr>
+          <td>Sheldon</td>
+          <td>25000</td>
+          <td>Chemist</td>
+          <td>Los Angeles</td>
+        </tr>
+        <tr>
+          <td>Penny</td>
+          <td>75000</td>
+          <td>Docter</td>
+          <td>Italy</td>
+        </tr>
+        <tr>
+          <td>Howard</td>
+          <td>8000</td>
+          <td>Nurse</td>
+          <td>India</td>
+        </tr>
+        <tr>
+          <td>Lenord</td>
+          <td>125000</td>
+          <td>Engineer</td>
+          <td>Russia</td>
+        </tr>
+        <tr>
+          <td>Amy</td>
+          <td>95000</td>
+          <td>Teacher</td>
+          <td>China</td>
+        </tr>
+        <tr>
+          <td>Bernadatte</td>
+          <td>15000</td>
+          <td>Sales Ex</td>
+          <td>Japan</td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>
