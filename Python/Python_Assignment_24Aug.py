@@ -1,51 +1,39 @@
-class Restaurant:
-
-
-    def __init__(self,customer_orders={},book_table={},menu_items=[]):
-        self.menu_items=menu_items
-        self.book_table=book_table
-        self.customer_orders=customer_orders
-
-    def add_item_to_menu(self,item_name):
-        self.menu_items.append(item_name)
+class Book:
     
-    def book_tables(self,no,customer_name):
-        self.book_table[customer_name]=no
+    def __init__(self,title="",authors=[],subject="",date="",info="") :
+        self.title=title
+        self.authors=authors
+        self.subject=subject
+        self.date=date
+        self.info=info
 
-    def customer_order(self,customer_name,item_list):
-        self.customer_orders[customer_name]=item_list
-
-    def display_menu(self):
-        print("The items in the restaurant are:-")
-        for i in self.menu_items:
+    def getAuthors(self):
+        print("The authors are :")
+        for i in self.authors:
             print(i)
-        print()
 
-    def display_bookings(self):
-        for i,j in self.book_table.items():
-            print(i,j)
-        print()
+    def addAuthor(self,newAuthor):
+        self.authors.append(newAuthor)
 
-    def display_cutomer_orders(self,customer_name):
-        print("The items ordered by "+customer_name+" are ",self.customer_orders[customer_name])
+    def getDate(self):
+        print(f"The date of the book is {self.date}")
 
-r1=Restaurant({},{},["pizzza","burger","Rice","Salad"])
+    def getTitle(self):
+        print(f"The title of the book is {self.title}")
 
-r1.add_item_to_menu("Soup")
+    def getSubject(self):
+        print(f"The subject of the book is {self.subject}")
+    
+    def getInfo(self):
+        print(f"The info about the book is {self.info}")
 
-r1.display_menu()
 
-r1.book_tables("Ram",1)
 
-r1.customer_order("Ram",["pizza","salad"])
-
-r1.display_menu()
-
-r1.book_tables("Setha",2)
-r1.book_tables("David",3)
-
-print("The table Bookings are:-")
-r1.display_bookings()
-
-r1.display_cutomer_orders("Ram")
-
+b=Book("Song of ice and fire",["R R Marting"],"Fantasy","25-08-2023","A story about the greatest and cruelest westroes king")
+b.addAuthor("JK Rowling")
+b.addAuthor("Steven")
+print("The Title is ",b.getTitle())
+print("The info is ",b.getInfo())
+print("The subject is ",b.getSubject())
+print("The date is ",b.getSubject())
+print(b.getAuthors())
