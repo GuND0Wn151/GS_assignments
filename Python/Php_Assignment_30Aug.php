@@ -1,12 +1,16 @@
 <?php
-function calculate_debt($a) {
-    $debt = 100000;
+function Task1_debt($a) {
+    $amount = 100000;
+
+    
     for ($i = 0; $i < $a; $i++) {
-        $interest = $debt * 0.05;
-        $debt += $interest;
-        $debt = ceil($debt / 1000) * 1000; 
+        $inte = $amount * 0.05;
+        $amount =$amount+ $inte;
+        $amount = ceil($amount / 1000) * 1000; 
     }
-    return $debt;
+
+    
+    return $amount;
 }
 
 function Circles($x1,$y1,$x2,$y2,$r1,$r2){
